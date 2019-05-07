@@ -2,32 +2,36 @@
 class App extends React.Component {
   render() {
     return (
-      React.createElement("div", { class: "centered" },
-      React.createElement(Box, null),
-      React.createElement(QuoteButton, null)));
-
-
-  }}
-
+      <div class="centered">
+        <Box initialQuote="Initial quote"/>
+      </div>
+    );
+  }
+}
 
 class Box extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      quote: props.initialQuote
+    }
+  }
+  
+  changeQuote(){
+    
+    this.setState({
+      quote :"Another Quote"
+    });
+    
+  }
   render() {
     return (
-      React.createElement("div", null,
-      React.createElement("h1", null, "\"Here's the div\"")));
+      <div>
+        <h1>{this.state.quote}</h1>
+        <button onClick={this.changeQuote.bind(this)}>select a quote</button>
+      </div>
+    );
+  }
+}
 
-
-  }}
-
-
-class QuoteButton extends React.Component {
-  render() {
-    return (
-      React.createElement("div", null,
-      React.createElement("button", null, "Select a quote")));
-
-
-  }}
-
-
-ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById("app"));
