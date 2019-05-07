@@ -1,0 +1,33 @@
+// Start React App
+class App extends React.Component {
+  render(){
+    return(
+      <div class="centered">
+        <Box/>
+        <QuoteButton/>
+      </div>
+    );
+  }
+}
+
+class Box extends React.Component {
+  render(){
+    return(
+      <div>
+        <h1>"Here's the div"</h1>
+      </div>
+    );
+  }
+}
+
+class QuoteButton extends React.Component {
+  render(){
+    return(
+      <div>
+        <button>Select a quote</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />,document.getElementById('app'));
