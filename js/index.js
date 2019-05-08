@@ -1,11 +1,11 @@
-// Start React App
+// Random Quote Machine - freeCodeCamp Project
 class App extends React.Component {
   constructor(props){
     super(props);
   }
   render() {
     return (
-      <div class="centered">
+      <div class="container">
         <Box initialQuote="Mulher Sofre" initialAuthor="Rosa, Karen"/>
       </div>
     );
@@ -23,12 +23,12 @@ class Box extends React.Component {
   
   changeQuote(){
     const quotesList =[
-      {quote :"We'll never fall apart cuz we fit together right.",
+      {quote :"We'll never fall apart cuz we fit together right",
       author: "Lovato, Demi"},
        {quote :"Paranoica",
       author: "Rosa, Karen"},
-       {quote :"Like Neon lights",
-      author: "Lovato, Demi"},
+       {quote :"Mulher Sofre",
+      author: "Rosa, Karen"},
        {quote :"Love Yourself",
       author: "BTS, Johnny"},
        {quote :"Love is beautiful",
@@ -39,12 +39,14 @@ class Box extends React.Component {
     
   }
   render() {
-    return (
+    return ( 
       <div id="quote-box">
         <h1 id="text">"{this.state.quote}"</h1>
         <h2 id="author">- {this.state.author}</h2>
-        <button><a id="tweet-quote" href="https://twitter.com/intent/tweet">tweet this quote</a></button>
-        <button id="new-quote" onClick={this.changeQuote.bind(this)}>new quote</button>
+        <div id="btns-display">
+          <button><a id="tweet-quote" href="https://twitter.com/intent/tweet">tweet this quote</a></button>
+         <button id="new-quote" onClick={this.changeQuote.bind(this)}>new quote</button>   
+        </div>
       </div>
     );
   }
