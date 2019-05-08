@@ -1,3 +1,19 @@
-.centered{
-  text-align: center;
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quote-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5db49;
+  width: 300px;
+  height: 300px;
+}
+
+#btns-display{
+  display: inline;
 }
