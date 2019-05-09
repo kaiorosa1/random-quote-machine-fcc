@@ -23,16 +23,34 @@ class Box extends React.Component {
   
   changeQuote(){
     const quotesList =[
-      {quote :"We'll never fall apart cuz we fit together right",
-      author: "Lovato, Demi"},
-       {quote :"Paranoica",
+      {quote :"De grao em grao a galinha enche o pipo",
+      author: "Rosa, Kaio"},
+       {quote :"Paranoia",
       author: "Rosa, Karen"},
        {quote :"Mulher Sofre",
       author: "Rosa, Karen"},
        {quote :"Love Yourself",
       author: "BTS, Johnny"},
-       {quote :"Love is beautiful",
-      author: "LastName , First Name"}
+       {quote :"Que loca!",
+      author: "Rosa , Karen"},
+      {quote :"Ai a vaca...",
+      author: "Rosa , Kamila"},
+      {quote :"Sabia que o sarara sabia sarara",
+      author: "Rosa , Kamila"},
+      {quote :"I am a Larry Shipper",
+      author: "Rosa , Kamila"},
+      {quote :"Minha cabeça ta coçando para cachorro",
+      author: "Rosa , Kamila"},
+      {quote :"Gonzaguinha...",
+      author: "Rosa , Kamila"},
+      {quote :"Choro de rico é igual agua benta..",
+      author: "Rosa ,Karen "},
+      {quote :"Mila show",
+      author: "Rosa , Kamila "},
+      {quote :"Super uper",
+      author: "Rosa , Kaio"},
+      {quote :"Sal sifufu",
+      author: "Rosa , Jocilia"}
     ];
     let randomIndex = Math.floor(Math.random()*quotesList.length);
     this.setState(quotesList[randomIndex]);
