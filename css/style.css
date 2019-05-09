@@ -10,10 +10,14 @@
   justify-content: center;
   align-items: center;
   background-color: #e5db49;
-  width: 300px;
+  border: 20px solid green;
+  width: 500px;
   height: 300px;
 }
 
+#quote-text {
+  text-align: center;
+}
 #btns-display{
   display: inline;
 }
