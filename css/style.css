@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(#28666E, #28666E, #A6C48A) fixed;
+}
+
 .container{
   display: flex;
   align-items: center;
@@ -9,15 +13,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e5db49;
-  border: 20px solid green;
+  background-color: #F7F0F0;
+  border: 10px solid #172121;
+/*   border-radius: 5%; */
   width: 500px;
   height: 300px;
 }
 
 #quote-text {
+  font-family: 'Lora', serif;
   text-align: center;
 }
+#tweet-quote{
+  color: #172121;
+}
+#new-quote{
+  margin: 0 20px 0 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #172121; 
+  height: 45px;
+  color: white;
+  border: none;
+  border-radius: 15%; 
+  text-decoration: none;
+  
+}
 #btns-display{
-  display: inline;
+  display: flex;
+ 
 }

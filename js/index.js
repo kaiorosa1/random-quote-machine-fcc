@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div class="container">
-        <Box initialQuote="Mulher Sofre" initialAuthor="Rosa, Karen"/>
+        <Box initialQuote="Mulher sofre" initialAuthor="Rosa, Karen"/>
       </div>
     );
   }
@@ -27,7 +27,7 @@ class Box extends React.Component {
       author: "Rosa, Kaio"},
        {quote :"Paranoia",
       author: "Rosa, Karen"},
-       {quote :"Mulher Sofre",
+       {quote :"Mulher sofre",
       author: "Rosa, Karen"},
        {quote :"Love Yourself",
       author: "BTS, Johnny"},
@@ -37,13 +37,13 @@ class Box extends React.Component {
       author: "Rosa , Kamila"},
       {quote :"Sabia que o sarara sabia sarara",
       author: "Rosa , Kamila"},
-      {quote :"I am a Larry Shipper",
+      {quote :"É uma Larry Shipper",
       author: "Rosa , Kamila"},
       {quote :"Minha cabeça ta coçando para cachorro",
       author: "Rosa , Kamila"},
       {quote :"Gonzaguinha...",
       author: "Rosa , Kamila"},
-      {quote :"Choro de rico é igual agua benta..",
+      {quote :"Choro de rico é igual agua benta",
       author: "Rosa ,Karen "},
       {quote :"Mila show",
       author: "Rosa , Kamila "},
@@ -59,10 +59,12 @@ class Box extends React.Component {
   render() {
     return ( 
       <div id="quote-box">
+        <div id="quote-text">
         <h1 id="text">"{this.state.quote}"</h1>
         <h2 id="author">- {this.state.author}</h2>
+        </div>
         <div id="btns-display">
-          <button><a id="tweet-quote" href="https://twitter.com/intent/tweet">tweet this quote</a></button>
+         <a id="tweet-quote" href="https://twitter.com/intent/tweet"> <i class="fab fa-twitter-square fa-3x"></i></a>
          <button id="new-quote" onClick={this.changeQuote.bind(this)}>new quote</button>   
         </div>
       </div>
