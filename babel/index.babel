@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div class="container">
-        <Box initialQuote="Mulher sofre" initialAuthor="Rosa, Karen"/>
+        <Box initialQuote="'The only way you are going to have success is to have lots of failures first" initialAuthor="Sergey Brin"/>
       </div>
     );
   }
@@ -23,34 +23,15 @@ class Box extends React.Component {
   
   changeQuote(){
     const quotesList =[
-      {quote :"De grao em grao a galinha enche o pipo",
-      author: "Rosa, Kaio"},
-       {quote :"Paranoia",
-      author: "Rosa, Karen"},
-       {quote :"Mulher sofre",
-      author: "Rosa, Karen"},
-       {quote :"Love Yourself",
-      author: "BTS, Johnny"},
-       {quote :"Que loca!",
-      author: "Rosa , Karen"},
-      {quote :"Ai a vaca...",
-      author: "Rosa , Kamila"},
-      {quote :"Sabia que o sarara sabia sarara",
-      author: "Rosa , Kamila"},
-      {quote :"É uma Larry Shipper",
-      author: "Rosa , Kamila"},
-      {quote :"Minha cabeça ta coçando para cachorro",
-      author: "Rosa , Kamila"},
-      {quote :"Gonzaguinha...",
-      author: "Rosa , Kamila"},
-      {quote :"Choro de rico é igual agua benta",
-      author: "Rosa ,Karen "},
-      {quote :"Mila show",
-      author: "Rosa , Kamila "},
-      {quote :"Super uper",
-      author: "Rosa , Kaio"},
-      {quote :"Sal sifufu",
-      author: "Rosa , Jocilia"}
+      {quote :"We are what we repeatedly do. Excellence then, is not an act but a habit!",
+      author: "Aristotle"},
+      {quote: "Anyone who has never made a mistake has never tried anything new",
+      author: "Albert Einstein"},
+      {quote: "Tomorrow becomes never. No matter how small the task, take the first step now!",
+      author: "Tim Ferriss"},
+      {quote: "The way to get started is to quit talking and begin doing.",
+      author: "Walt Disney"}
+      
     ];
     let randomIndex = Math.floor(Math.random()*quotesList.length);
     this.setState(quotesList[randomIndex]);
